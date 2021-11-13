@@ -9,11 +9,9 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://mp.weixin.qq.com"
   spec.license      = "MIT"
   spec.author       = { "sealedace" => "sealedaceg@gmail.com" }
-  spec.source       = { :http => "https://gfd.coding.net/p/iosdisanfangjingxiangku/d/iOS_LibrariesMirror/git/raw/master/OpenSDK1.9.2.zip?download=true" }
+  spec.source       = { http: "https://gfd.coding.net/p/iosdisanfangjingxiangku/d/iOS_LibrariesMirror/git/raw/master/OpenSDK1.9.2.zip" }
   spec.platform         = :ios, '9.0'
 
-  spec.public_header_files = "OpenSDK1.9.2/*.h"
-  spec.vendored_libraries  = 'OpenSDK1.9.2/*.a'
   spec.frameworks 	       = 'CFNetwork', 'Security', 'CoreTelephony', 'SystemConfiguration', 'UIKit', 'CoreGraphics', 'Foundation', 'WebKit'
   spec.libraries           = 'z', 'sqlite3.0', 'c++'
 
